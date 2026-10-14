@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Fluent Privacy Policy
 
-**Effective date:** 2 October 2026
+**Effective date:** 14 October 2026
 
 This policy explains what the Fluent app ("Fluent", "we", "us") collects, why,
 who it is shared with, and the choices you have. Fluent is operated by
@@ -37,7 +37,8 @@ Talha Hussain, Pakistan. Contact: **talhatechwith@gmail.com**.
 **Usage and diagnostics**
 - App usage events, such as sign-in method, onboarding steps, lessons started
   and completed, scores and paywall views. They are collected through Google
-  Firebase Analytics.
+  Firebase Analytics and PostHog, linked to your account ID. PostHog does not
+  record your screen or your voice.
 - Crash reports through Firebase Crashlytics. These include device type,
   operating system version and your account ID, so crashes can be fixed.
 
@@ -66,6 +67,7 @@ We share data only with the service providers that run the app's features:
 | Provider | What it receives | Why |
 |---|---|---|
 | Google Firebase (Authentication, Firestore, Analytics, Crashlytics) | Account details, profile, progress, usage and crash data | Sign-in, storage and sync, analytics, crash reporting |
+| PostHog | App usage events and screens viewed, with your account ID | Product analytics |
 | Apple / Google sign-in | Sign-in request | Signing you in |
 | Microsoft Azure Speech | Your voice while you read, and the lesson text | Scoring your pronunciation |
 | Supabase | Requests from the app (with your account ID) | Running our server functions |
@@ -78,7 +80,7 @@ We do not sell your personal data.
 
 We keep your account data until you delete your account. Voice clips stay on
 your phone until you delete the app or your account. Analytics and crash data
-are kept according to Firebase's retention settings.
+are kept according to Firebase's and PostHog's retention settings.
 
 ## 5. Your choices and rights
 
